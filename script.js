@@ -25,7 +25,7 @@ document.querySelector('.check').addEventListener('click', function () {
         }
         // when guess is different to secret number
     } else {
-        if (score > 1) {
+        if (score >= 1) {
             displayMessage(guess > secretNumber ? '📈 Too high' : '📉 Too low');
             score--;
             document.querySelector('.score').textContent = score;
